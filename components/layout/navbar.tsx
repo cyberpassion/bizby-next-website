@@ -81,7 +81,7 @@ export const Navbar = () => {
           <NavigationMenu className="mx-auto hidden lg:block">
             <NavigationMenuList className="space-x-0">
               <NavigationMenuItem>
-                <NavigationMenuTrigger className="bg-transparent">Products</NavigationMenuTrigger>
+                <NavigationMenuTrigger className="bg-transparent">Industries</NavigationMenuTrigger>
                 <NavigationMenuContent>
                   <div className="w-72 gap-4">
                     <ul className="flex flex-col">

@@ -9,51 +9,54 @@ interface ReviewProps {
 export const reviewList: ReviewProps[] = [
   {
     image: "/avatars/7.png",
-    name: "John Doe",
-    userName: "Product Manager",
+    name: "Mr. James Anthony",
+    userName: "Holymother Public School, Bharatpur",
     comment:
-      "This platform transformed our workflow! The automation features saved us countless hours, and the support team is fantastic!",
+      "We’ve been using Bizby’s ERP for school for more than 3 years, also took android app from them. We’re very satisfied by Ravi and his team.",
     rating: 5.0,
   },
   {
-    image: "/avatars/6.png",
-    name: "Sophia Collins",
-    userName: "Cybersecurity Analyst",
-    comment:
-      "I can’t imagine running my business without this tool. The insights from the analytics have helped us make smarter decisions.",
-    rating: 4.8,
-  },
+  image: "/avatars/6.png",
+  name: "Mr. Hoshiar Singh",
+  userName: "KD Public School, Mathura",
+  comment:
+    "KD Public School, Mathura has been using Bizby ERP for more than 2 years. The services offered by the team are reliable and top-notch.",
+  rating: 4.8,
+},
+
+{
+  image: "/avatars/5.png",
+  name: "Dr. Anil Chauhan",
+  userName: "Chauhan Hospital, Mathura",
+  comment:
+    "We’ve installed Bizby ERP at 2 of our hospitals and are very satisfied with the product and the services provided by the team.",
+  rating: 4.9,
+},
+
 
   {
-    image: "/avatars/5.png",
-    name: "Adam Johnson",
-    userName: "Chief Technology Officer",
-    comment:
-      "The training sessions were invaluable. Our team is now fully equipped to utilize all the features effectively!",
-    rating: 4.9,
-  },
-  {
-    image: "/avatars/4.png",
-    name: "Ethan Parker",
-    userName: "Data Scientist",
-    comment:
-      "Great integration options! Connecting our existing tools was a breeze, and it’s improved our overall efficiency.",
-    rating: 5.0,
-  },
-  {
-    image: "/avatars/5.png",
-    name: "Ava Mitchell",
-    userName: "IT Project Manager",
-    comment:
-      "The customer support is top-notch. They’ve been there for us every step of the way, ensuring everything runs smoothly.",
-    rating: 5.0,
-  },
-  {
-    image: "/avatars/6.png",
-    name: "Isabella Reed",
-    userName: "DevOps Engineer",
-    comment:
-      "I love the customization capabilities. It feels like this platform was built just for our business needs!",
-    rating: 4.9,
-  },
+  image: "/avatars/8.png",
+  name: "Ms. Priya Verma",
+  userName: "Bright Future Coaching, Agra",
+  comment:
+    "Bright Future Coaching has been using Bizby ERP for managing our coaching programs efficiently. The support team is always responsive and helpful.",
+  rating: 4.7,
+},
+{
+  image: "/avatars/9.png",
+  name: "Mr. Rakesh Gupta",
+  userName: "Sunrise Hospital, Bharatpur",
+  comment:
+    "Bizby ERP has greatly improved our hospital management and patient records system. We highly recommend their solution to other healthcare providers.",
+  rating: 5.0,
+},
+{
+  image: "/avatars/10.png",
+  name: "Ms. Ananya Singh",
+  userName: "Elite Academy, Mathura",
+  comment:
+    "Using Bizby ERP for our academy has streamlined registrations, fee management, and student tracking. Very satisfied with the ease of use and support.",
+  rating: 4.8,
+},
+
 ];
