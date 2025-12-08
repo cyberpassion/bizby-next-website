@@ -14,10 +14,8 @@ export const BenefitsSection = () => {
             className="sticky max-w-full text-center lg:top-[22rem] lg:text-start"
             subTitle="Benefits"
             title="What Do We Bring to You?"
-            description="All the innovative solutions you need to grow your business are
-              here! We add value to your business with our features that
-              simplify your workflow, increase efficiency and strengthen your
-              decisions."
+            description="We deliver a unified ERP marketplace that centralizes your business operations on a single platform.
+                        Simplify workflows, improve efficiency, and manage your organization with ease."
           />
         </div>
 

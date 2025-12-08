@@ -18,10 +18,10 @@ export const HeroSection = () => {
               <span> AI-Powered Optimization </span>
             </Badge>
             <div className="mx-auto max-w-(--breakpoint-md) text-center text-4xl font-bold md:text-6xl">
-              <h1>Optimize Your Website with AI Support</h1>
+              <h1>Streamline Your Workflow with an Integrated ERP</h1>
             </div>
             <p className="text-muted-foreground mx-auto max-w-(--breakpoint-sm) text-xl">
-              {`Meet our AI-powered SaaS solution to lighten your workload, increase efficiency and make more accurate decisions.`}
+              {`Meet our ERP platform designed to streamline your entire workflow, operations, boost productivity, and enable informed decisions.`}
             </p>
             <div className="mt-8 flex flex-col justify-center gap-4 md:flex-row!">
               <Button className="h-12 px-10 text-base">

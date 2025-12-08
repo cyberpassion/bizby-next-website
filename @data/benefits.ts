@@ -7,26 +7,27 @@ interface BenefitsProps {
 export const benefitList: BenefitsProps[] = [
   {
     icon: "Blocks",
-    title: "AI-Powered Automation",
+    title: "Automated Workflows",
     description:
-      "Save time and increase your efficiency by automating your routine business processes."
+      "Save time and increase efficiency by streamlining your routine business processes."
   },
   {
     icon: "ChartLine",
-    title: "Real Time Data Analytics",
+    title: "Real-Time Insights",
     description:
-      "We help you make more informed and strategic decisions by instantly analyzing your data."
+      "Make informed decisions quickly with instant access to critical business data."
   },
   {
     icon: "Wallet",
-    title: "Personalized Experience",
+    title: "Customizable Solutions",
     description:
-      "It offers flexible solutions with its adaptable structure according to the specific needs of your business."
+      "Adapt the system to your specific business needs with flexible and configurable options."
   },
   {
     icon: "Sparkle",
-    title: "Scalable Structure",
+    title: "Scalable Platform",
     description:
-      "Move forward into the future with confidence, with an infrastructure that can expand as your business grows."
+      "Grow your business confidently with an infrastructure designed to expand with you."
   }
 ];
+

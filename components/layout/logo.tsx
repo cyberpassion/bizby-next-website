@@ -8,7 +8,7 @@ export default function Logo() {
       <span className="flex items-center justify-center size-7 lg:size-8 mr-2 bg-linear-to-tr from-primary via-primary/70 to-primary rounded-lg border border-secondary">
         <SunDimIcon className="size-5 lg:size-6 text-white" />
       </span>
-      <h5 className="text-lg lg:text-xl">Cosmic</h5>
+      <h5 className="text-lg lg:text-xl">Bizby</h5>
     </Link>
   );
 }

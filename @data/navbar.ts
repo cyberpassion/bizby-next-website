@@ -30,18 +30,29 @@ export const routeList: RouteProps[] = [
 
 export const productList: ProductProps[] = [
   {
-    title: "LaunchPad",
-    icon: "Frame",
-    description: "Launch high-impact pages effortlessly.",
+    title: "Education",
+    icon: "GraduationCap",
+    description: "Automate School, College & Coaching Institutes",
   },
   {
-    title: "Orbit Analytics",
-    icon: "ChartScatter",
-    description: "Powerful insights for smarter decisions.",
+    title: "Healthcare",
+    icon: "Stethoscope",
+    description: "Automate Clinics & Hospitals",
   },
   {
-    title: "Nova Integrator",
-    icon: "Blocks",
-    description: "Seamless connections with your favorite tools.",
+    title: "Hospitality",
+    icon: "Hotel",
+    description: "Automate Restaurants & Hotels",
+  },
+  {
+    title: "Sales & Service",
+    icon: "ShoppingCart",
+    description: "Automate Sales & Service",
+  },
+  {
+    title: "CRM Solutions",
+    icon: "Users",
+    description: "Automate Customer Relationship",
   },
 ];
+
