@@ -12,8 +12,7 @@ export const FooterSection = () => {
           <div className="col-span-full space-y-4 xl:col-span-2">
             <Logo />
             <p className="text-muted-foreground">
-              Meet our AI-powered SaaS solution to lighten your workload, increase efficiency and
-              make more accurate decisions.
+              Meet our ERP platform designed to streamline your entire workflow, operations, boost productivity, and enable informed decisions.
             </p>
           </div>
 
@@ -108,7 +107,7 @@ export const FooterSection = () => {
           <span>|</span>
           <Button variant="link" className="h-auto p-0" asChild>
             <Link target="_blank" href="https://bundui.io/">
-              Bundui
+              Bizby
             </Link>
           </Button>
           .

@@ -13,7 +13,7 @@ import { TeamSection } from "@/components/layout/sections/team";
 import { TestimonialSection } from "@/components/layout/sections/testimonial";
 
 export const metadata = {
-  title: `Cosmic - Landing Page SaaS Template (shadcn/ui)`,
+  title: `Bizby - Where Business Runs Better`,
   description:
     "Cosmic is a high converting SAAS landing page template built with Next.js 15, TailwindCSS 4, React 19 and shadcn/ui.",
   openGraph: {
