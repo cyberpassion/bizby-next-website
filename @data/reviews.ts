@@ -8,7 +8,7 @@ interface ReviewProps {
 
 export const reviewList: ReviewProps[] = [
   {
-    image: "/avatars/7.png",
+    image: "https://cyberpassion.com/wp-content/uploads/2022/05/james-sir.jpeg",
     name: "Mr. James Anthony",
     userName: "Holymother Public School, Bharatpur",
     comment:
@@ -16,7 +16,7 @@ export const reviewList: ReviewProps[] = [
     rating: 5.0,
   },
   {
-  image: "/avatars/6.png",
+  image: "https://cyberpassion.com/wp-content/uploads/2022/05/hoshiar-singh.jpeg",
   name: "Mr. Hoshiar Singh",
   userName: "KD Public School, Mathura",
   comment:
@@ -25,7 +25,7 @@ export const reviewList: ReviewProps[] = [
 },
 
 {
-  image: "/avatars/5.png",
+  image: "https://cyberpassion.com/wp-content/uploads/2022/05/dr-chauhan.png",
   name: "Dr. Anil Chauhan",
   userName: "Chauhan Hospital, Mathura",
   comment:
@@ -35,7 +35,7 @@ export const reviewList: ReviewProps[] = [
 
 
   {
-  image: "/avatars/8.png",
+  image: "/avatars/5.png",
   name: "Ms. Priya Verma",
   userName: "Bright Future Coaching, Agra",
   comment:
@@ -43,7 +43,7 @@ export const reviewList: ReviewProps[] = [
   rating: 4.7,
 },
 {
-  image: "/avatars/9.png",
+  image: "/avatars/6.png",
   name: "Mr. Rakesh Gupta",
   userName: "Sunrise Hospital, Bharatpur",
   comment:
@@ -51,7 +51,7 @@ export const reviewList: ReviewProps[] = [
   rating: 5.0,
 },
 {
-  image: "/avatars/10.png",
+  image: "/avatars/7.png",
   name: "Ms. Ananya Singh",
   userName: "Elite Academy, Mathura",
   comment:
