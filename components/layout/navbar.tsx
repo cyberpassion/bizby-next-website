@@ -6,6 +6,7 @@ import { cn } from "@/lib/utils";
 import { ChevronRightIcon, Menu } from "lucide-react";
 
 import { productList, routeList } from "@/@data/navbar";
+import { solutionList, } from "@/@data/navbar";
 
 import Icon from "@/components/icon";
 import { Sheet, SheetContent, SheetFooter, SheetHeader, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
@@ -58,7 +59,10 @@ export const Navbar = () => {
 					{/* <!-- Desktop --> */}
 					<NavigationMenu className="mx-auto hidden lg:block">
 						<NavigationMenuList className="space-x-0">
-							<NavigationMenuItem>
+							
+
+								{/*Industries*/}
+								<NavigationMenuItem>
 								<NavigationMenuTrigger className="bg-transparent">Industries</NavigationMenuTrigger>
 								<NavigationMenuContent>
 									<div className="w-72 gap-4">
@@ -79,8 +83,51 @@ export const Navbar = () => {
 										</ul>
 									</div>
 								</NavigationMenuContent>
-							</NavigationMenuItem>
+								</NavigationMenuItem>
 
+
+								{/*Solutions*/}
+								<NavigationMenuItem>
+	<NavigationMenuTrigger className="bg-transparent">
+		Solutions
+	</NavigationMenuTrigger>
+
+	<NavigationMenuContent
+		className="
+			left-1/2
+			-translate-x-1/2
+		"
+	>
+		<div className="w-[1200px] max-w-[95vw]">
+			<ul className="grid grid-flow-col grid-rows-5 auto-cols-fr gap-3">
+				{solutionList.map(({ title, description, icon, href }) => (
+					<li key={title} className="min-w-0">
+						<Link
+							href={href}
+							className="hover:bg-muted flex items-start gap-4 rounded-md p-4 text-sm h-full"
+						>
+							<div className="bg-primary/20 ring-primary/10 flex size-8 shrink-0 items-center justify-center rounded-full p-2 ring-8">
+								<Icon name={icon} className="text-primary size-5" />
+							</div>
+
+							<div className="min-w-0">
+								<p className="text-foreground mb-1 font-semibold truncate">
+									{title}
+								</p>
+								<p className="text-muted-foreground text-xs line-clamp-2">
+									{description}
+								</p>
+							</div>
+						</Link>
+					</li>
+				))}
+			</ul>
+		</div>
+	</NavigationMenuContent>
+</NavigationMenuItem>
+
+
+							
 							<NavigationMenuItem>
 								{routeList.map(({ href, label }) => (
 									<NavigationMenuLink key={href} asChild className={cn(navigationMenuTriggerStyle(), "hover:bg-muted! bg-transparent!")}>
