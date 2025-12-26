@@ -1,6 +1,5 @@
 "use client";
 
-import { reviewList } from "@/@data/reviews";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Card, CardContent, CardDescription, CardTitle } from "@/components/ui/card";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
@@ -8,9 +7,9 @@ import { Star } from "lucide-react";
 import SectionContainer from "@/components/layout/section-container";
 import SectionHeader from "@/components/layout/section-header";
 
-export const TestimonialSection = () => {
+export const TestimonialSection = ({ reviewList }) => {
 	return (
-		<SectionContainer id="testimonials">
+		<SectionContainer id="testimonials" className="py-12">
 			<SectionHeader subTitle="Testimonials" title="Loved by Teams Worldwide" description="Don't just take our word for it. See what our customers have to say about their experience." />
 			<Carousel
 				opts={{

@@ -1,7 +1,9 @@
 import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
+import { TestimonialSection } from "@/components/layout/sections/cyp/testimonial";
 
 import { features } from "./features";
+import { reviews } from "./reviews";
 
 export default async function Page() {
 	const headerImage = "/seo.jpg";
@@ -19,8 +21,8 @@ export default async function Page() {
 	return (
 		<>
 			<SplitHeroSection headerImage={headerImage} title={pageTitle} byline={pageByline} description={pageDescription} getStartedLink={getStartedLink} demoLink={demoLink} />
-
 			<FeaturesSection title={featuresTitle} description={featuresDescription} featureList={features} />
+			<TestimonialSection reviewList={reviews} />
 		</>
 	);
 }
