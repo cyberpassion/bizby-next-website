@@ -2,57 +2,57 @@ import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
 
 export default async function Page() {
-  const headerImage = "/employee-hero.jpg";
+  const headerImage = "/announcements-hero.jpg"; // same theme-style image
 
-  const pageTitle = "Employee Management, Made Simple";
-  const pageByline = "Empower your workforce and improve operational efficiency";
+  const pageTitle = "Announcements, Clear & Timely Communication";
+  const pageByline = "Share important updates with the right audience instantly";
   const pageDescription =
-    "Bizby’s Employee Module helps organizations manage employee records, attendance, roles, performance, and communication—all from a single, centralized platform.";
+    "Bizby’s Announcements Module helps you create, manage, and deliver important messages across your organization. Ensure everyone stays informed with timely and targeted announcements.";
 
   const getStartedLink = "/signup";
   const demoLink = "/demo";
 
-  /* Employee Module Features */
-  const featuresTitle = "Everything You Need to Manage Your Workforce";
+  /* Announcements Features */
+  const featuresTitle = "Why Businesses Choose Bizby Announcements";
   const featuresDescription =
-    "From onboarding to performance tracking, Bizby gives you complete visibility and control over your team.";
+    "A reliable communication tool designed to keep teams, customers, and stakeholders informed.";
 
   const features = [
     {
-      title: "Centralized Employee Profiles",
+      title: "Create & Publish Announcements",
       description:
-        "Maintain complete employee records including personal details, roles, documents, and work history.",
-      icon: "User",
+        "Compose announcements with rich text, attachments, and links.",
+      icon: "Megaphone",
     },
     {
-      title: "Attendance & Shift Management",
+      title: "Audience Targeting",
       description:
-        "Track attendance, shifts, leaves, and working hours with flexible scheduling options.",
-      icon: "CalendarCheck",
+        "Send announcements to specific teams, roles, groups, or users.",
+      icon: "Users",
     },
     {
-      title: "Roles, Permissions & Access",
+      title: "Scheduled Publishing",
       description:
-        "Define roles and permissions to ensure secure, role-based access to systems and data.",
-      icon: "ShieldCheck",
+        "Schedule announcements to be published at the right time.",
+      icon: "CalendarClock",
     },
     {
-      title: "Performance Tracking",
+      title: "Read Receipts & Engagement",
       description:
-        "Monitor goals, KPIs, and performance metrics to support employee growth and accountability.",
-      icon: "TrendingUp",
+        "Track who has viewed announcements and measure engagement.",
+      icon: "Eye",
     },
     {
-      title: "Internal Communication",
+      title: "Multi-Channel Delivery",
       description:
-        "Share announcements, updates, and feedback through integrated communication tools.",
-      icon: "MessageSquare",
+        "Deliver announcements via dashboard, email, or notifications.",
+      icon: "Send",
     },
     {
-      title: "Reports & Workforce Insights",
+      title: "Archive & History",
       description:
-        "Analyze attendance trends, productivity, and workforce costs with real-time reports.",
-      icon: "BarChart",
+        "Maintain a searchable archive of all past announcements.",
+      icon: "Archive",
     },
   ];
 
@@ -72,18 +72,17 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        feature={features}
+        featureList={features}
       />
 
-
-      {/* Employee Lifecycle Section */}
+      {/* Process Section */}
       <section className="container py-20 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold">
-            Manage the Complete Employee Lifecycle
+            How Announcements Work
           </h2>
           <p className="text-muted-foreground">
-            Support your team from onboarding to long-term performance and growth.
+            A simple and effective way to broadcast important information.
           </p>
         </div>
 
@@ -91,27 +90,27 @@ export default async function Page() {
           {[
             {
               step: "01",
-              title: "Onboarding & Setup",
+              title: "Draft Message",
               description:
-                "Digitize onboarding, assign roles, and set access from day one.",
+                "Create announcements with text, media, and attachments.",
             },
             {
               step: "02",
-              title: "Scheduling & Attendance",
+              title: "Select Audience",
               description:
-                "Manage shifts, attendance, leaves, and work hours efficiently.",
+                "Choose who should receive the announcement.",
             },
             {
               step: "03",
-              title: "Performance & Development",
+              title: "Publish or Schedule",
               description:
-                "Track goals, reviews, and skill development over time.",
+                "Send instantly or schedule for later delivery.",
             },
             {
               step: "04",
-              title: "Retention & Engagement",
+              title: "Track Engagement",
               description:
-                "Improve engagement through communication, feedback, and transparency.",
+                "Monitor views, engagement, and responses.",
             },
           ].map((item) => (
             <div
@@ -134,11 +133,10 @@ export default async function Page() {
       <section className="bg-muted py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl font-bold">
-            Build a More Productive Workforce
+            Keep Everyone Informed, Always
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Streamline employee management, improve accountability,
-            and empower your teams with Bizby’s Employee Module.
+            Deliver clear and timely updates across your organization with Bizby’s Announcements Module.
           </p>
 
           <div className="flex justify-center gap-4">

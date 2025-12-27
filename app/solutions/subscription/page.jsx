@@ -2,57 +2,57 @@ import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
 
 export default async function Page() {
-  const headerImage = "/employee-hero.jpg";
+  const headerImage = "/subscription-management-hero.jpg"; // same theme-style image
 
-  const pageTitle = "Employee Management, Made Simple";
-  const pageByline = "Empower your workforce and improve operational efficiency";
+  const pageTitle = "Subscription Management, Made Simple";
+  const pageByline = "Manage plans, billing, and renewals effortlessly";
   const pageDescription =
-    "Bizby’s Employee Module helps organizations manage employee records, attendance, roles, performance, and communication—all from a single, centralized platform.";
+    "Bizby’s Subscription Management Module helps businesses create, manage, and scale subscription-based services. Automate billing, track renewals, and gain full visibility into recurring revenue.";
 
   const getStartedLink = "/signup";
   const demoLink = "/demo";
 
-  /* Employee Module Features */
-  const featuresTitle = "Everything You Need to Manage Your Workforce";
+  /* Subscription Management Features */
+  const featuresTitle = "Why Businesses Choose Bizby Subscription Management";
   const featuresDescription =
-    "From onboarding to performance tracking, Bizby gives you complete visibility and control over your team.";
+    "Everything you need to manage subscriptions and recurring revenue in one platform.";
 
   const features = [
     {
-      title: "Centralized Employee Profiles",
+      title: "Flexible Subscription Plans",
       description:
-        "Maintain complete employee records including personal details, roles, documents, and work history.",
-      icon: "User",
+        "Create and manage monthly, yearly, and custom subscription plans.",
+      icon: "Layers",
     },
     {
-      title: "Attendance & Shift Management",
+      title: "Automated Billing & Invoicing",
       description:
-        "Track attendance, shifts, leaves, and working hours with flexible scheduling options.",
-      icon: "CalendarCheck",
+        "Automate recurring billing, invoices, and payment collection.",
+      icon: "CreditCard",
     },
     {
-      title: "Roles, Permissions & Access",
+      title: "Renewals & Upgrades",
       description:
-        "Define roles and permissions to ensure secure, role-based access to systems and data.",
-      icon: "ShieldCheck",
+        "Manage renewals, plan upgrades, downgrades, and cancellations.",
+      icon: "RefreshCcw",
     },
     {
-      title: "Performance Tracking",
+      title: "Customer Subscription Portal",
       description:
-        "Monitor goals, KPIs, and performance metrics to support employee growth and accountability.",
-      icon: "TrendingUp",
+        "Give customers access to manage their subscriptions and payments.",
+      icon: "UserCog",
     },
     {
-      title: "Internal Communication",
+      title: "Revenue & Churn Analytics",
       description:
-        "Share announcements, updates, and feedback through integrated communication tools.",
-      icon: "MessageSquare",
+        "Track MRR, ARR, churn, and subscription performance metrics.",
+      icon: "BarChart3",
     },
     {
-      title: "Reports & Workforce Insights",
+      title: "Integrations & Automation",
       description:
-        "Analyze attendance trends, productivity, and workforce costs with real-time reports.",
-      icon: "BarChart",
+        "Integrate with payment gateways, CRM, and accounting systems.",
+      icon: "Plug",
     },
   ];
 
@@ -72,18 +72,17 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        feature={features}
+        featureList={features}
       />
 
-
-      {/* Employee Lifecycle Section */}
+      {/* Process Section */}
       <section className="container py-20 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold">
-            Manage the Complete Employee Lifecycle
+            How Subscription Management Works
           </h2>
           <p className="text-muted-foreground">
-            Support your team from onboarding to long-term performance and growth.
+            A seamless workflow for managing subscriptions end-to-end.
           </p>
         </div>
 
@@ -91,27 +90,27 @@ export default async function Page() {
           {[
             {
               step: "01",
-              title: "Onboarding & Setup",
+              title: "Create Plans",
               description:
-                "Digitize onboarding, assign roles, and set access from day one.",
+                "Define subscription plans, pricing, and billing cycles.",
             },
             {
               step: "02",
-              title: "Scheduling & Attendance",
+              title: "Onboard Customers",
               description:
-                "Manage shifts, attendance, leaves, and work hours efficiently.",
+                "Subscribe customers with automated billing setup.",
             },
             {
               step: "03",
-              title: "Performance & Development",
+              title: "Manage & Automate",
               description:
-                "Track goals, reviews, and skill development over time.",
+                "Handle renewals, upgrades, invoices, and payments.",
             },
             {
               step: "04",
-              title: "Retention & Engagement",
+              title: "Analyze & Scale",
               description:
-                "Improve engagement through communication, feedback, and transparency.",
+                "Track revenue metrics and optimize subscription growth.",
             },
           ].map((item) => (
             <div
@@ -134,11 +133,10 @@ export default async function Page() {
       <section className="bg-muted py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl font-bold">
-            Build a More Productive Workforce
+            Build & Scale Recurring Revenue
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Streamline employee management, improve accountability,
-            and empower your teams with Bizby’s Employee Module.
+            Simplify subscription operations, improve retention, and grow recurring revenue with Bizby’s Subscription Management Module.
           </p>
 
           <div className="flex justify-center gap-4">

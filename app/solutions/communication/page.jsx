@@ -2,57 +2,57 @@ import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
 
 export default async function Page() {
-  const headerImage = "/employee-hero.jpg";
+  const headerImage = "/communication-management-hero.jpg"; // same theme-style image
 
-  const pageTitle = "Employee Management, Made Simple";
-  const pageByline = "Empower your workforce and improve operational efficiency";
+  const pageTitle = "Communication Management, Unified & Effective";
+  const pageByline = "Manage all business communications from one platform";
   const pageDescription =
-    "Bizby’s Employee Module helps organizations manage employee records, attendance, roles, performance, and communication—all from a single, centralized platform.";
+    "Bizby’s Communication Management Module helps you centralize, manage, and track communications across teams, customers, and stakeholders. Deliver consistent messages through multiple channels with full visibility.";
 
   const getStartedLink = "/signup";
   const demoLink = "/demo";
 
-  /* Employee Module Features */
-  const featuresTitle = "Everything You Need to Manage Your Workforce";
+  /* Communication Management Features */
+  const featuresTitle = "Why Businesses Choose Bizby Communication Management";
   const featuresDescription =
-    "From onboarding to performance tracking, Bizby gives you complete visibility and control over your team.";
+    "A comprehensive solution to streamline internal and external communication.";
 
   const features = [
     {
-      title: "Centralized Employee Profiles",
+      title: "Multi-Channel Messaging",
       description:
-        "Maintain complete employee records including personal details, roles, documents, and work history.",
-      icon: "User",
+        "Communicate via email, SMS, notifications, and in-app messages.",
+      icon: "MessagesSquare",
     },
     {
-      title: "Attendance & Shift Management",
+      title: "Centralized Communication Hub",
       description:
-        "Track attendance, shifts, leaves, and working hours with flexible scheduling options.",
-      icon: "CalendarCheck",
+        "View and manage all conversations from a single dashboard.",
+      icon: "Inbox",
     },
     {
-      title: "Roles, Permissions & Access",
+      title: "Audience Segmentation",
       description:
-        "Define roles and permissions to ensure secure, role-based access to systems and data.",
-      icon: "ShieldCheck",
+        "Target messages to specific users, teams, or customer groups.",
+      icon: "Users",
     },
     {
-      title: "Performance Tracking",
+      title: "Automated Communication Workflows",
       description:
-        "Monitor goals, KPIs, and performance metrics to support employee growth and accountability.",
-      icon: "TrendingUp",
+        "Trigger messages automatically based on events or actions.",
+      icon: "Workflow",
     },
     {
-      title: "Internal Communication",
+      title: "Templates & Personalization",
       description:
-        "Share announcements, updates, and feedback through integrated communication tools.",
-      icon: "MessageSquare",
+        "Use reusable templates and personalize messages dynamically.",
+      icon: "FileEdit",
     },
     {
-      title: "Reports & Workforce Insights",
+      title: "Delivery Reports & Analytics",
       description:
-        "Analyze attendance trends, productivity, and workforce costs with real-time reports.",
-      icon: "BarChart",
+        "Track delivery status, open rates, and engagement metrics.",
+      icon: "BarChart3",
     },
   ];
 
@@ -72,18 +72,17 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        feature={features}
+        featureList={features}
       />
 
-
-      {/* Employee Lifecycle Section */}
+      {/* Process Section */}
       <section className="container py-20 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold">
-            Manage the Complete Employee Lifecycle
+            How Communication Management Works
           </h2>
           <p className="text-muted-foreground">
-            Support your team from onboarding to long-term performance and growth.
+            A streamlined process to deliver clear and consistent communication.
           </p>
         </div>
 
@@ -91,27 +90,27 @@ export default async function Page() {
           {[
             {
               step: "01",
-              title: "Onboarding & Setup",
+              title: "Define Channels & Audience",
               description:
-                "Digitize onboarding, assign roles, and set access from day one.",
+                "Choose communication channels and target recipients.",
             },
             {
               step: "02",
-              title: "Scheduling & Attendance",
+              title: "Create Message",
               description:
-                "Manage shifts, attendance, leaves, and work hours efficiently.",
+                "Draft messages using templates or custom content.",
             },
             {
               step: "03",
-              title: "Performance & Development",
+              title: "Send or Automate",
               description:
-                "Track goals, reviews, and skill development over time.",
+                "Deliver messages instantly or via automated workflows.",
             },
             {
               step: "04",
-              title: "Retention & Engagement",
+              title: "Track & Optimize",
               description:
-                "Improve engagement through communication, feedback, and transparency.",
+                "Monitor engagement and optimize future communication.",
             },
           ].map((item) => (
             <div
@@ -134,11 +133,10 @@ export default async function Page() {
       <section className="bg-muted py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl font-bold">
-            Build a More Productive Workforce
+            Simplify Business Communication
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Streamline employee management, improve accountability,
-            and empower your teams with Bizby’s Employee Module.
+            Centralize messaging, improve engagement, and communicate with confidence using Bizby’s Communication Management Module.
           </p>
 
           <div className="flex justify-center gap-4">

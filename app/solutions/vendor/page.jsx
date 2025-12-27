@@ -2,57 +2,57 @@ import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
 
 export default async function Page() {
-  const headerImage = "/employee-hero.jpg";
+  const headerImage = "/vendor-management-hero.jpg"; // same theme-style image
 
-  const pageTitle = "Employee Management, Made Simple";
-  const pageByline = "Empower your workforce and improve operational efficiency";
+  const pageTitle = "Vendor Management, Organized & Transparent";
+  const pageByline = "Manage vendors, contracts, and performance from one place";
   const pageDescription =
-    "Bizby’s Employee Module helps organizations manage employee records, attendance, roles, performance, and communication—all from a single, centralized platform.";
+    "Bizby’s Vendor Management Module helps you onboard, manage, and evaluate vendors efficiently. Centralize vendor data, streamline communication, and ensure compliance across your organization.";
 
   const getStartedLink = "/signup";
   const demoLink = "/demo";
 
-  /* Employee Module Features */
-  const featuresTitle = "Everything You Need to Manage Your Workforce";
+  /* Vendor Management Features */
+  const featuresTitle = "Why Businesses Choose Bizby Vendor Management";
   const featuresDescription =
-    "From onboarding to performance tracking, Bizby gives you complete visibility and control over your team.";
+    "A complete solution to manage vendor relationships with clarity, control, and accountability.";
 
   const features = [
     {
-      title: "Centralized Employee Profiles",
+      title: "Vendor Onboarding & Profiles",
       description:
-        "Maintain complete employee records including personal details, roles, documents, and work history.",
-      icon: "User",
+        "Create detailed vendor profiles with documents, contacts, and compliance details.",
+      icon: "UserPlus",
     },
     {
-      title: "Attendance & Shift Management",
+      title: "Contract & Agreement Management",
       description:
-        "Track attendance, shifts, leaves, and working hours with flexible scheduling options.",
-      icon: "CalendarCheck",
+        "Store and track contracts, renewal dates, and terms effortlessly.",
+      icon: "FileText",
     },
     {
-      title: "Roles, Permissions & Access",
+      title: "Performance & Rating Tracking",
       description:
-        "Define roles and permissions to ensure secure, role-based access to systems and data.",
+        "Evaluate vendor performance using ratings, KPIs, and feedback.",
+      icon: "BarChart3",
+    },
+    {
+      title: "Payment & Invoice Tracking",
+      description:
+        "Monitor invoices, payment status, and transaction history in real time.",
+      icon: "Receipt",
+    },
+    {
+      title: "Compliance & Document Control",
+      description:
+        "Ensure vendors meet compliance requirements with document tracking.",
       icon: "ShieldCheck",
     },
     {
-      title: "Performance Tracking",
+      title: "Reports & Insights",
       description:
-        "Monitor goals, KPIs, and performance metrics to support employee growth and accountability.",
-      icon: "TrendingUp",
-    },
-    {
-      title: "Internal Communication",
-      description:
-        "Share announcements, updates, and feedback through integrated communication tools.",
-      icon: "MessageSquare",
-    },
-    {
-      title: "Reports & Workforce Insights",
-      description:
-        "Analyze attendance trends, productivity, and workforce costs with real-time reports.",
-      icon: "BarChart",
+        "Generate actionable insights on vendor spend and performance.",
+      icon: "FileBarChart",
     },
   ];
 
@@ -72,18 +72,17 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        feature={features}
+        featureList={features}
       />
 
-
-      {/* Employee Lifecycle Section */}
+      {/* Process Section */}
       <section className="container py-20 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold">
-            Manage the Complete Employee Lifecycle
+            How Vendor Management Works
           </h2>
           <p className="text-muted-foreground">
-            Support your team from onboarding to long-term performance and growth.
+            A structured approach to managing vendor relationships efficiently.
           </p>
         </div>
 
@@ -91,27 +90,27 @@ export default async function Page() {
           {[
             {
               step: "01",
-              title: "Onboarding & Setup",
+              title: "Vendor Onboarding",
               description:
-                "Digitize onboarding, assign roles, and set access from day one.",
+                "Register vendors and collect documents and agreements.",
             },
             {
               step: "02",
-              title: "Scheduling & Attendance",
+              title: "Contract & Compliance",
               description:
-                "Manage shifts, attendance, leaves, and work hours efficiently.",
+                "Manage contracts, compliance, and renewal timelines.",
             },
             {
               step: "03",
-              title: "Performance & Development",
+              title: "Transaction & Performance",
               description:
-                "Track goals, reviews, and skill development over time.",
+                "Track invoices, payments, and vendor performance.",
             },
             {
               step: "04",
-              title: "Retention & Engagement",
+              title: "Insights & Optimization",
               description:
-                "Improve engagement through communication, feedback, and transparency.",
+                "Analyze data to improve vendor relationships and costs.",
             },
           ].map((item) => (
             <div
@@ -134,11 +133,10 @@ export default async function Page() {
       <section className="bg-muted py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl font-bold">
-            Build a More Productive Workforce
+            Build Stronger Vendor Relationships
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Streamline employee management, improve accountability,
-            and empower your teams with Bizby’s Employee Module.
+            Improve transparency, reduce risks, and manage vendors more effectively with Bizby’s Vendor Management Module.
           </p>
 
           <div className="flex justify-center gap-4">

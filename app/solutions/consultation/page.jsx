@@ -72,8 +72,9 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        features={features}
+        featureList={features}
       />
+
 
       {/* Process Section */}
       <section className="container py-20 space-y-12">

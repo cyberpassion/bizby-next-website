@@ -2,57 +2,57 @@ import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
 
 export default async function Page() {
-  const headerImage = "/employee-hero.jpg";
+  const headerImage = "/meeting-management-hero.jpg"; // keep same visual style
 
-  const pageTitle = "Employee Management, Made Simple";
-  const pageByline = "Empower your workforce and improve operational efficiency";
+  const pageTitle = "Meeting Management, Simplified";
+  const pageByline = "Plan, organize, and track meetings with ease";
   const pageDescription =
-    "Bizby’s Employee Module helps organizations manage employee records, attendance, roles, performance, and communication—all from a single, centralized platform.";
+    "Bizby’s Meeting Management Module helps teams schedule, manage, and track meetings efficiently. From agendas to follow-ups, keep every meeting productive and aligned.";
 
   const getStartedLink = "/signup";
   const demoLink = "/demo";
 
-  /* Employee Module Features */
-  const featuresTitle = "Everything You Need to Manage Your Workforce";
+  /* Meeting Management Features */
+  const featuresTitle = "Why Businesses Choose Bizby Meeting Management";
   const featuresDescription =
-    "From onboarding to performance tracking, Bizby gives you complete visibility and control over your team.";
+    "Everything you need to run effective meetings in one unified platform.";
 
   const features = [
     {
-      title: "Centralized Employee Profiles",
+      title: "Centralized Meeting Scheduling",
       description:
-        "Maintain complete employee records including personal details, roles, documents, and work history.",
-      icon: "User",
+        "Schedule meetings across teams with shared calendars and availability.",
+      icon: "Calendar",
     },
     {
-      title: "Attendance & Shift Management",
+      title: "Agenda & Minutes Management",
       description:
-        "Track attendance, shifts, leaves, and working hours with flexible scheduling options.",
-      icon: "CalendarCheck",
+        "Create structured agendas and capture meeting minutes effortlessly.",
+      icon: "ClipboardList",
     },
     {
-      title: "Roles, Permissions & Access",
+      title: "Participant & Role Management",
       description:
-        "Define roles and permissions to ensure secure, role-based access to systems and data.",
-      icon: "ShieldCheck",
+        "Assign roles, track attendance, and manage participants seamlessly.",
+      icon: "Users",
     },
     {
-      title: "Performance Tracking",
+      title: "Virtual & In-Person Meetings",
       description:
-        "Monitor goals, KPIs, and performance metrics to support employee growth and accountability.",
-      icon: "TrendingUp",
+        "Manage online and offline meetings from a single dashboard.",
+      icon: "Video",
     },
     {
-      title: "Internal Communication",
+      title: "Action Items & Follow-Ups",
       description:
-        "Share announcements, updates, and feedback through integrated communication tools.",
-      icon: "MessageSquare",
+        "Assign tasks, track decisions, and ensure accountability after meetings.",
+      icon: "CheckCircle",
     },
     {
-      title: "Reports & Workforce Insights",
+      title: "Meeting Insights & Reports",
       description:
-        "Analyze attendance trends, productivity, and workforce costs with real-time reports.",
-      icon: "BarChart",
+        "Analyze meeting frequency, attendance, and outcomes for optimization.",
+      icon: "BarChart3",
     },
   ];
 
@@ -72,18 +72,17 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        feature={features}
+        featureList={features}
       />
 
-
-      {/* Employee Lifecycle Section */}
+      {/* Process Section */}
       <section className="container py-20 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold">
-            Manage the Complete Employee Lifecycle
+            How Meeting Management Works
           </h2>
           <p className="text-muted-foreground">
-            Support your team from onboarding to long-term performance and growth.
+            A structured workflow to make every meeting productive.
           </p>
         </div>
 
@@ -91,27 +90,27 @@ export default async function Page() {
           {[
             {
               step: "01",
-              title: "Onboarding & Setup",
+              title: "Schedule & Invite",
               description:
-                "Digitize onboarding, assign roles, and set access from day one.",
+                "Plan meetings and invite participants with ease.",
             },
             {
               step: "02",
-              title: "Scheduling & Attendance",
+              title: "Prepare Agenda",
               description:
-                "Manage shifts, attendance, leaves, and work hours efficiently.",
+                "Define objectives, topics, and discussion points.",
             },
             {
               step: "03",
-              title: "Performance & Development",
+              title: "Conduct Meeting",
               description:
-                "Track goals, reviews, and skill development over time.",
+                "Host meetings with clear roles and real-time collaboration.",
             },
             {
               step: "04",
-              title: "Retention & Engagement",
+              title: "Track Outcomes",
               description:
-                "Improve engagement through communication, feedback, and transparency.",
+                "Capture minutes, assign tasks, and follow up effectively.",
             },
           ].map((item) => (
             <div
@@ -134,11 +133,10 @@ export default async function Page() {
       <section className="bg-muted py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl font-bold">
-            Build a More Productive Workforce
+            Make Every Meeting Count
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Streamline employee management, improve accountability,
-            and empower your teams with Bizby’s Employee Module.
+            Improve collaboration, accountability, and productivity with Bizby’s Meeting Management Module.
           </p>
 
           <div className="flex justify-center gap-4">

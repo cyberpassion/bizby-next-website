@@ -2,57 +2,57 @@ import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
 
 export default async function Page() {
-  const headerImage = "/employee-hero.jpg";
+  const headerImage = "/event-management-hero.jpg"; // keep same visual style
 
-  const pageTitle = "Employee Management, Made Simple";
-  const pageByline = "Empower your workforce and improve operational efficiency";
+  const pageTitle = "Event Management, Made Effortless";
+  const pageByline = "Plan, manage, and deliver successful events from one platform";
   const pageDescription =
-    "Bizby’s Employee Module helps organizations manage employee records, attendance, roles, performance, and communication—all from a single, centralized platform.";
+    "Bizby’s Event Management Module helps you plan, organize, and execute events seamlessly. From registrations to engagement and post-event insights, manage every stage with confidence.";
 
   const getStartedLink = "/signup";
   const demoLink = "/demo";
 
-  /* Employee Module Features */
-  const featuresTitle = "Everything You Need to Manage Your Workforce";
+  /* Event Management Features */
+  const featuresTitle = "Why Businesses Choose Bizby Event Management";
   const featuresDescription =
-    "From onboarding to performance tracking, Bizby gives you complete visibility and control over your team.";
+    "Everything you need to manage events efficiently—whether virtual, in-person, or hybrid.";
 
   const features = [
     {
-      title: "Centralized Employee Profiles",
+      title: "Centralized Event Planning",
       description:
-        "Maintain complete employee records including personal details, roles, documents, and work history.",
-      icon: "User",
+        "Manage event details, schedules, speakers, venues, and resources from a single dashboard.",
+      icon: "Calendar",
     },
     {
-      title: "Attendance & Shift Management",
+      title: "Registration & Ticketing",
       description:
-        "Track attendance, shifts, leaves, and working hours with flexible scheduling options.",
-      icon: "CalendarCheck",
+        "Handle registrations, ticket sales, confirmations, and attendee data with ease.",
+      icon: "Ticket",
     },
     {
-      title: "Roles, Permissions & Access",
+      title: "Attendee Management",
       description:
-        "Define roles and permissions to ensure secure, role-based access to systems and data.",
-      icon: "ShieldCheck",
+        "Track attendees, check-ins, participation, and engagement throughout the event.",
+      icon: "Users",
     },
     {
-      title: "Performance Tracking",
+      title: "Automated Communication",
       description:
-        "Monitor goals, KPIs, and performance metrics to support employee growth and accountability.",
-      icon: "TrendingUp",
+        "Send event reminders, updates, and follow-ups via email or messaging automatically.",
+      icon: "Mail",
     },
     {
-      title: "Internal Communication",
+      title: "Real-Time Event Insights",
       description:
-        "Share announcements, updates, and feedback through integrated communication tools.",
-      icon: "MessageSquare",
-    },
-    {
-      title: "Reports & Workforce Insights",
-      description:
-        "Analyze attendance trends, productivity, and workforce costs with real-time reports.",
+        "Monitor attendance, engagement, and performance metrics in real time.",
       icon: "BarChart",
+    },
+    {
+      title: "Post-Event Analysis & Follow-ups",
+      description:
+        "Measure success, collect feedback, and nurture leads after the event concludes.",
+      icon: "ClipboardCheck",
     },
   ];
 
@@ -72,18 +72,17 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        feature={features}
+        featureList={features}
       />
 
-
-      {/* Employee Lifecycle Section */}
+      {/* Process Section */}
       <section className="container py-20 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold">
-            Manage the Complete Employee Lifecycle
+            How Event Management Works
           </h2>
           <p className="text-muted-foreground">
-            Support your team from onboarding to long-term performance and growth.
+            A streamlined process to plan, execute, and optimize every event.
           </p>
         </div>
 
@@ -91,27 +90,27 @@ export default async function Page() {
           {[
             {
               step: "01",
-              title: "Onboarding & Setup",
+              title: "Plan & Setup",
               description:
-                "Digitize onboarding, assign roles, and set access from day one.",
+                "Create events, define schedules, manage speakers, venues, and logistics.",
             },
             {
               step: "02",
-              title: "Scheduling & Attendance",
+              title: "Promote & Register",
               description:
-                "Manage shifts, attendance, leaves, and work hours efficiently.",
+                "Promote events, manage registrations, and track attendee sign-ups.",
             },
             {
               step: "03",
-              title: "Performance & Development",
+              title: "Execute & Engage",
               description:
-                "Track goals, reviews, and skill development over time.",
+                "Run events smoothly with check-ins, live engagement, and real-time tracking.",
             },
             {
               step: "04",
-              title: "Retention & Engagement",
+              title: "Analyze & Follow Up",
               description:
-                "Improve engagement through communication, feedback, and transparency.",
+                "Review performance, gather feedback, and nurture leads post-event.",
             },
           ].map((item) => (
             <div
@@ -134,11 +133,10 @@ export default async function Page() {
       <section className="bg-muted py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl font-bold">
-            Build a More Productive Workforce
+            Host Better Events with Bizby
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Streamline employee management, improve accountability,
-            and empower your teams with Bizby’s Employee Module.
+            From small meetings to large-scale conferences, Bizby’s Event Management Module ensures flawless execution and meaningful engagement.
           </p>
 
           <div className="flex justify-center gap-4">

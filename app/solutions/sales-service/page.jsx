@@ -2,57 +2,57 @@ import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
 
 export default async function Page() {
-  const headerImage = "/employee-hero.jpg";
+  const headerImage = "/sales-service-management-hero.jpg"; // same theme image style
 
-  const pageTitle = "Employee Management, Made Simple";
-  const pageByline = "Empower your workforce and improve operational efficiency";
+  const pageTitle = "Sales & Service Management, Unified";
+  const pageByline = "Manage sales pipelines and service operations seamlessly";
   const pageDescription =
-    "Bizby’s Employee Module helps organizations manage employee records, attendance, roles, performance, and communication—all from a single, centralized platform.";
+    "Bizby’s Sales & Service Management Module helps businesses streamline lead conversion, order processing, and customer service from a single platform. Drive revenue growth while delivering exceptional customer experiences.";
 
   const getStartedLink = "/signup";
   const demoLink = "/demo";
 
-  /* Employee Module Features */
-  const featuresTitle = "Everything You Need to Manage Your Workforce";
+  /* Sales & Service Management Features */
+  const featuresTitle = "Why Businesses Choose Bizby Sales & Service Management";
   const featuresDescription =
-    "From onboarding to performance tracking, Bizby gives you complete visibility and control over your team.";
+    "An end-to-end solution to manage sales cycles and service workflows efficiently.";
 
   const features = [
     {
-      title: "Centralized Employee Profiles",
+      title: "Sales Pipeline Management",
       description:
-        "Maintain complete employee records including personal details, roles, documents, and work history.",
-      icon: "User",
-    },
-    {
-      title: "Attendance & Shift Management",
-      description:
-        "Track attendance, shifts, leaves, and working hours with flexible scheduling options.",
-      icon: "CalendarCheck",
-    },
-    {
-      title: "Roles, Permissions & Access",
-      description:
-        "Define roles and permissions to ensure secure, role-based access to systems and data.",
-      icon: "ShieldCheck",
-    },
-    {
-      title: "Performance Tracking",
-      description:
-        "Monitor goals, KPIs, and performance metrics to support employee growth and accountability.",
+        "Track leads, opportunities, and deals across every sales stage.",
       icon: "TrendingUp",
     },
     {
-      title: "Internal Communication",
+      title: "Quotation & Order Management",
       description:
-        "Share announcements, updates, and feedback through integrated communication tools.",
-      icon: "MessageSquare",
+        "Create quotes, manage orders, and track fulfillment effortlessly.",
+      icon: "FileText",
     },
     {
-      title: "Reports & Workforce Insights",
+      title: "Customer Service & Ticketing",
       description:
-        "Analyze attendance trends, productivity, and workforce costs with real-time reports.",
-      icon: "BarChart",
+        "Handle customer queries, complaints, and service requests efficiently.",
+      icon: "LifeBuoy",
+    },
+    {
+      title: "Task & SLA Tracking",
+      description:
+        "Assign tasks, monitor SLAs, and ensure timely service delivery.",
+      icon: "Clock",
+    },
+    {
+      title: "Field Service Management",
+      description:
+        "Manage on-site service visits, technicians, and schedules.",
+      icon: "MapPin",
+    },
+    {
+      title: "Sales & Service Analytics",
+      description:
+        "Gain insights into performance, revenue, and service efficiency.",
+      icon: "BarChart3",
     },
   ];
 
@@ -72,18 +72,17 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        feature={features}
+        featureList={features}
       />
 
-
-      {/* Employee Lifecycle Section */}
+      {/* Process Section */}
       <section className="container py-20 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold">
-            Manage the Complete Employee Lifecycle
+            How Sales & Service Management Works
           </h2>
           <p className="text-muted-foreground">
-            Support your team from onboarding to long-term performance and growth.
+            A streamlined workflow from lead generation to post-sales support.
           </p>
         </div>
 
@@ -91,27 +90,27 @@ export default async function Page() {
           {[
             {
               step: "01",
-              title: "Onboarding & Setup",
+              title: "Capture Leads & Requests",
               description:
-                "Digitize onboarding, assign roles, and set access from day one.",
+                "Collect sales leads and service requests from multiple channels.",
             },
             {
               step: "02",
-              title: "Scheduling & Attendance",
+              title: "Convert & Fulfill",
               description:
-                "Manage shifts, attendance, leaves, and work hours efficiently.",
+                "Convert leads into orders and deliver products or services.",
             },
             {
               step: "03",
-              title: "Performance & Development",
+              title: "Serve & Support",
               description:
-                "Track goals, reviews, and skill development over time.",
+                "Resolve customer issues through structured service workflows.",
             },
             {
               step: "04",
-              title: "Retention & Engagement",
+              title: "Analyze & Improve",
               description:
-                "Improve engagement through communication, feedback, and transparency.",
+                "Track performance and optimize sales and service processes.",
             },
           ].map((item) => (
             <div
@@ -134,11 +133,10 @@ export default async function Page() {
       <section className="bg-muted py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl font-bold">
-            Build a More Productive Workforce
+            Accelerate Sales & Elevate Service
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Streamline employee management, improve accountability,
-            and empower your teams with Bizby’s Employee Module.
+            Increase revenue, improve customer satisfaction, and streamline operations with Bizby’s Sales & Service Management Module.
           </p>
 
           <div className="flex justify-center gap-4">

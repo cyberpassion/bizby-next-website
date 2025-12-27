@@ -2,57 +2,57 @@ import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
 
 export default async function Page() {
-  const headerImage = "/employee-hero.jpg";
+  const headerImage = "/service-management-hero.jpg"; // theme-style hero image
 
-  const pageTitle = "Employee Management, Made Simple";
-  const pageByline = "Empower your workforce and improve operational efficiency";
+  const pageTitle = "Service Management, Simplified";
+  const pageByline = "Manage service requests, tasks, and customer support efficiently";
   const pageDescription =
-    "Bizby’s Employee Module helps organizations manage employee records, attendance, roles, performance, and communication—all from a single, centralized platform.";
+    "Bizby’s Service Management Module helps businesses track, manage, and optimize service operations. Ensure timely resolutions, monitor team performance, and enhance customer satisfaction.";
 
   const getStartedLink = "/signup";
   const demoLink = "/demo";
 
-  /* Employee Module Features */
-  const featuresTitle = "Everything You Need to Manage Your Workforce";
+  /* Service Management Features */
+  const featuresTitle = "Why Businesses Choose Bizby Service Management";
   const featuresDescription =
-    "From onboarding to performance tracking, Bizby gives you complete visibility and control over your team.";
+    "A comprehensive solution to manage service operations, tasks, and customer satisfaction.";
 
   const features = [
     {
-      title: "Centralized Employee Profiles",
+      title: "Service Request Management",
       description:
-        "Maintain complete employee records including personal details, roles, documents, and work history.",
-      icon: "User",
+        "Track incoming service requests and assign tasks to the right team.",
+      icon: "Clipboard",
     },
     {
-      title: "Attendance & Shift Management",
+      title: "Task Scheduling & Assignment",
       description:
-        "Track attendance, shifts, leaves, and working hours with flexible scheduling options.",
-      icon: "CalendarCheck",
+        "Schedule service tasks, assign technicians, and monitor progress.",
+      icon: "Calendar",
     },
     {
-      title: "Roles, Permissions & Access",
+      title: "Real-Time Tracking & Updates",
       description:
-        "Define roles and permissions to ensure secure, role-based access to systems and data.",
-      icon: "ShieldCheck",
+        "Monitor task status and provide updates to customers in real time.",
+      icon: "Activity",
     },
     {
-      title: "Performance Tracking",
+      title: "Customer Communication",
       description:
-        "Monitor goals, KPIs, and performance metrics to support employee growth and accountability.",
-      icon: "TrendingUp",
+        "Keep customers informed with notifications and updates for each service request.",
+      icon: "MessageCircle",
     },
     {
-      title: "Internal Communication",
+      title: "Performance Analytics",
       description:
-        "Share announcements, updates, and feedback through integrated communication tools.",
-      icon: "MessageSquare",
+        "Analyze service metrics, resolution times, and team efficiency.",
+      icon: "BarChart3",
     },
     {
-      title: "Reports & Workforce Insights",
+      title: "Integration & Automation",
       description:
-        "Analyze attendance trends, productivity, and workforce costs with real-time reports.",
-      icon: "BarChart",
+        "Integrate with CRM, billing, and inventory systems for seamless operations.",
+      icon: "Plug",
     },
   ];
 
@@ -72,18 +72,17 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        feature={features}
+        featureList={features}
       />
 
-
-      {/* Employee Lifecycle Section */}
+      {/* Process Section */}
       <section className="container py-20 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold">
-            Manage the Complete Employee Lifecycle
+            How Service Management Works
           </h2>
           <p className="text-muted-foreground">
-            Support your team from onboarding to long-term performance and growth.
+            A structured approach to managing service tasks and customer support.
           </p>
         </div>
 
@@ -91,27 +90,27 @@ export default async function Page() {
           {[
             {
               step: "01",
-              title: "Onboarding & Setup",
+              title: "Receive Requests",
               description:
-                "Digitize onboarding, assign roles, and set access from day one.",
+                "Log and categorize incoming service requests efficiently.",
             },
             {
               step: "02",
-              title: "Scheduling & Attendance",
+              title: "Assign & Schedule",
               description:
-                "Manage shifts, attendance, leaves, and work hours efficiently.",
+                "Allocate tasks to teams and schedule service actions.",
             },
             {
               step: "03",
-              title: "Performance & Development",
+              title: "Track & Update",
               description:
-                "Track goals, reviews, and skill development over time.",
+                "Monitor task progress and update customers in real time.",
             },
             {
               step: "04",
-              title: "Retention & Engagement",
+              title: "Analyze & Optimize",
               description:
-                "Improve engagement through communication, feedback, and transparency.",
+                "Review service metrics and optimize workflows for efficiency.",
             },
           ].map((item) => (
             <div
@@ -134,11 +133,10 @@ export default async function Page() {
       <section className="bg-muted py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl font-bold">
-            Build a More Productive Workforce
+            Deliver Exceptional Service Every Time
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Streamline employee management, improve accountability,
-            and empower your teams with Bizby’s Employee Module.
+            Improve service efficiency, track team performance, and enhance customer satisfaction with Bizby’s Service Management Module.
           </p>
 
           <div className="flex justify-center gap-4">

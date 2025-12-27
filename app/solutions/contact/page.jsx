@@ -2,57 +2,57 @@ import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
 
 export default async function Page() {
-  const headerImage = "/employee-hero.jpg";
+  const headerImage = "/contact-management-hero.jpg"; // same theme-style image
 
-  const pageTitle = "Employee Management, Made Simple";
-  const pageByline = "Empower your workforce and improve operational efficiency";
+  const pageTitle = "Contact Management, Organized & Accessible";
+  const pageByline = "Manage all your contacts in one smart, centralized system";
   const pageDescription =
-    "Bizby’s Employee Module helps organizations manage employee records, attendance, roles, performance, and communication—all from a single, centralized platform.";
+    "Bizby’s Contact Management Module helps you store, organize, and manage all your business contacts efficiently. Get a complete view of every interaction and build stronger relationships.";
 
   const getStartedLink = "/signup";
   const demoLink = "/demo";
 
-  /* Employee Module Features */
-  const featuresTitle = "Everything You Need to Manage Your Workforce";
+  /* Contact Management Features */
+  const featuresTitle = "Why Businesses Choose Bizby Contact Management";
   const featuresDescription =
-    "From onboarding to performance tracking, Bizby gives you complete visibility and control over your team.";
+    "A powerful and intuitive solution to manage contacts across teams, departments, and channels.";
 
   const features = [
     {
-      title: "Centralized Employee Profiles",
+      title: "Centralized Contact Database",
       description:
-        "Maintain complete employee records including personal details, roles, documents, and work history.",
-      icon: "User",
+        "Store and manage all contacts—customers, leads, vendors, and partners—in one place.",
+      icon: "BookUser",
     },
     {
-      title: "Attendance & Shift Management",
+      title: "Detailed Contact Profiles",
       description:
-        "Track attendance, shifts, leaves, and working hours with flexible scheduling options.",
-      icon: "CalendarCheck",
+        "Maintain rich contact profiles with interaction history, notes, and attachments.",
+      icon: "IdCard",
     },
     {
-      title: "Roles, Permissions & Access",
+      title: "Contact Segmentation",
       description:
-        "Define roles and permissions to ensure secure, role-based access to systems and data.",
+        "Segment contacts based on type, activity, location, or custom attributes.",
+      icon: "Filter",
+    },
+    {
+      title: "Interaction Tracking",
+      description:
+        "Track calls, emails, meetings, and tasks linked to each contact.",
+      icon: "MessageCircle",
+    },
+    {
+      title: "Smart Search & Filters",
+      description:
+        "Quickly find contacts using advanced search, filters, and tags.",
+      icon: "Search",
+    },
+    {
+      title: "Secure Access & Permissions",
+      description:
+        "Control who can view or edit contacts with role-based permissions.",
       icon: "ShieldCheck",
-    },
-    {
-      title: "Performance Tracking",
-      description:
-        "Monitor goals, KPIs, and performance metrics to support employee growth and accountability.",
-      icon: "TrendingUp",
-    },
-    {
-      title: "Internal Communication",
-      description:
-        "Share announcements, updates, and feedback through integrated communication tools.",
-      icon: "MessageSquare",
-    },
-    {
-      title: "Reports & Workforce Insights",
-      description:
-        "Analyze attendance trends, productivity, and workforce costs with real-time reports.",
-      icon: "BarChart",
     },
   ];
 
@@ -72,18 +72,17 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        feature={features}
+        featureList={features}
       />
 
-
-      {/* Employee Lifecycle Section */}
+      {/* Process Section */}
       <section className="container py-20 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold">
-            Manage the Complete Employee Lifecycle
+            How Contact Management Works
           </h2>
           <p className="text-muted-foreground">
-            Support your team from onboarding to long-term performance and growth.
+            A simple and structured approach to organize and manage relationships.
           </p>
         </div>
 
@@ -91,27 +90,27 @@ export default async function Page() {
           {[
             {
               step: "01",
-              title: "Onboarding & Setup",
+              title: "Contact Capture",
               description:
-                "Digitize onboarding, assign roles, and set access from day one.",
+                "Add contacts manually or import them from multiple sources.",
             },
             {
               step: "02",
-              title: "Scheduling & Attendance",
+              title: "Profile Organization",
               description:
-                "Manage shifts, attendance, leaves, and work hours efficiently.",
+                "Enrich contact profiles with details, notes, and history.",
             },
             {
               step: "03",
-              title: "Performance & Development",
+              title: "Engagement Tracking",
               description:
-                "Track goals, reviews, and skill development over time.",
+                "Log interactions and tasks to maintain context across teams.",
             },
             {
               step: "04",
-              title: "Retention & Engagement",
+              title: "Access & Optimization",
               description:
-                "Improve engagement through communication, feedback, and transparency.",
+                "Securely share contacts and optimize usage with insights.",
             },
           ].map((item) => (
             <div
@@ -134,11 +133,10 @@ export default async function Page() {
       <section className="bg-muted py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl font-bold">
-            Build a More Productive Workforce
+            Keep Every Contact at Your Fingertips
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Streamline employee management, improve accountability,
-            and empower your teams with Bizby’s Employee Module.
+            Organize relationships, improve collaboration, and never lose track of important contacts with Bizby’s Contact Management Module.
           </p>
 
           <div className="flex justify-center gap-4">

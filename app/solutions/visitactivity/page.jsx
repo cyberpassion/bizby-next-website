@@ -2,57 +2,57 @@ import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
 
 export default async function Page() {
-  const headerImage = "/employee-hero.jpg";
+  const headerImage = "/visit-activity-management-hero.jpg"; // keep same theme-style image
 
-  const pageTitle = "Employee Management, Made Simple";
-  const pageByline = "Empower your workforce and improve operational efficiency";
+  const pageTitle = "Visit Activity Management, Streamlined";
+  const pageByline = "Plan, track, and optimize on-site and field visits";
   const pageDescription =
-    "Bizby’s Employee Module helps organizations manage employee records, attendance, roles, performance, and communication—all from a single, centralized platform.";
+    "Bizby’s Visit Activity Management Module helps organizations manage field visits, client meetings, inspections, and follow-ups efficiently. Track activities in real time and improve accountability across teams.";
 
   const getStartedLink = "/signup";
   const demoLink = "/demo";
 
-  /* Employee Module Features */
-  const featuresTitle = "Everything You Need to Manage Your Workforce";
+  /* Visit Activity Management Features */
+  const featuresTitle = "Why Businesses Choose Bizby Visit Activity Management";
   const featuresDescription =
-    "From onboarding to performance tracking, Bizby gives you complete visibility and control over your team.";
+    "A complete solution to manage field visits and on-ground activities with full visibility.";
 
   const features = [
     {
-      title: "Centralized Employee Profiles",
+      title: "Visit Planning & Scheduling",
       description:
-        "Maintain complete employee records including personal details, roles, documents, and work history.",
-      icon: "User",
+        "Plan and schedule visits with customers, vendors, or sites easily.",
+      icon: "Calendar",
     },
     {
-      title: "Attendance & Shift Management",
+      title: "Field Staff Assignment",
       description:
-        "Track attendance, shifts, leaves, and working hours with flexible scheduling options.",
-      icon: "CalendarCheck",
+        "Assign visits to field teams and track responsibilities.",
+      icon: "Users",
     },
     {
-      title: "Roles, Permissions & Access",
+      title: "Check-In / Check-Out Tracking",
       description:
-        "Define roles and permissions to ensure secure, role-based access to systems and data.",
-      icon: "ShieldCheck",
+        "Track visit start and end times with location-based check-ins.",
+      icon: "MapPin",
     },
     {
-      title: "Performance Tracking",
+      title: "Visit Notes & Attachments",
       description:
-        "Monitor goals, KPIs, and performance metrics to support employee growth and accountability.",
-      icon: "TrendingUp",
+        "Capture notes, photos, documents, and feedback during visits.",
+      icon: "FileText",
     },
     {
-      title: "Internal Communication",
+      title: "Follow-Ups & Action Items",
       description:
-        "Share announcements, updates, and feedback through integrated communication tools.",
-      icon: "MessageSquare",
+        "Create follow-up tasks and track post-visit actions.",
+      icon: "CheckCircle",
     },
     {
-      title: "Reports & Workforce Insights",
+      title: "Visit Reports & Analytics",
       description:
-        "Analyze attendance trends, productivity, and workforce costs with real-time reports.",
-      icon: "BarChart",
+        "Analyze visit frequency, performance, and outcomes.",
+      icon: "BarChart3",
     },
   ];
 
@@ -72,18 +72,17 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        feature={features}
+        featureList={features}
       />
 
-
-      {/* Employee Lifecycle Section */}
+      {/* Process Section */}
       <section className="container py-20 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold">
-            Manage the Complete Employee Lifecycle
+            How Visit Activity Management Works
           </h2>
           <p className="text-muted-foreground">
-            Support your team from onboarding to long-term performance and growth.
+            A structured workflow to manage every visit efficiently.
           </p>
         </div>
 
@@ -91,27 +90,27 @@ export default async function Page() {
           {[
             {
               step: "01",
-              title: "Onboarding & Setup",
+              title: "Plan Visits",
               description:
-                "Digitize onboarding, assign roles, and set access from day one.",
+                "Schedule visits and define objectives in advance.",
             },
             {
               step: "02",
-              title: "Scheduling & Attendance",
+              title: "Assign & Track",
               description:
-                "Manage shifts, attendance, leaves, and work hours efficiently.",
+                "Assign field staff and track visit status in real time.",
             },
             {
               step: "03",
-              title: "Performance & Development",
+              title: "Record Activity",
               description:
-                "Track goals, reviews, and skill development over time.",
+                "Capture visit details, notes, and evidence on the go.",
             },
             {
               step: "04",
-              title: "Retention & Engagement",
+              title: "Review & Improve",
               description:
-                "Improve engagement through communication, feedback, and transparency.",
+                "Analyze visit data and optimize field operations.",
             },
           ].map((item) => (
             <div
@@ -134,11 +133,10 @@ export default async function Page() {
       <section className="bg-muted py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl font-bold">
-            Build a More Productive Workforce
+            Gain Full Visibility Into Field Activities
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Streamline employee management, improve accountability,
-            and empower your teams with Bizby’s Employee Module.
+            Improve field productivity, accountability, and reporting with Bizby’s Visit Activity Management Module.
           </p>
 
           <div className="flex justify-center gap-4">

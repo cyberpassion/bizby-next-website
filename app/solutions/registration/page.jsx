@@ -2,57 +2,57 @@ import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
 
 export default async function Page() {
-  const headerImage = "/employee-hero.jpg";
+  const headerImage = "/registration-management-hero.jpg"; // same theme-style image
 
-  const pageTitle = "Employee Management, Made Simple";
-  const pageByline = "Empower your workforce and improve operational efficiency";
+  const pageTitle = "Registration Management, Simple & Scalable";
+  const pageByline = "Manage registrations smoothly from start to confirmation";
   const pageDescription =
-    "Bizby’s Employee Module helps organizations manage employee records, attendance, roles, performance, and communication—all from a single, centralized platform.";
+    "Bizby’s Registration Management Module helps you capture, verify, and manage registrations efficiently. Whether for students, events, programs, or services, streamline the entire registration process.";
 
   const getStartedLink = "/signup";
   const demoLink = "/demo";
 
-  /* Employee Module Features */
-  const featuresTitle = "Everything You Need to Manage Your Workforce";
+  /* Registration Management Features */
+  const featuresTitle = "Why Businesses Choose Bizby Registration Management";
   const featuresDescription =
-    "From onboarding to performance tracking, Bizby gives you complete visibility and control over your team.";
+    "A flexible and reliable solution designed to handle registrations with speed, accuracy, and control.";
 
   const features = [
     {
-      title: "Centralized Employee Profiles",
+      title: "Custom Registration Forms",
       description:
-        "Maintain complete employee records including personal details, roles, documents, and work history.",
-      icon: "User",
+        "Create dynamic and customizable registration forms tailored to your needs.",
+      icon: "ClipboardList",
     },
     {
-      title: "Attendance & Shift Management",
+      title: "Automated Data Capture",
       description:
-        "Track attendance, shifts, leaves, and working hours with flexible scheduling options.",
-      icon: "CalendarCheck",
+        "Capture and store registration data automatically with validation rules.",
+      icon: "Database",
     },
     {
-      title: "Roles, Permissions & Access",
+      title: "Approval & Verification Workflow",
       description:
-        "Define roles and permissions to ensure secure, role-based access to systems and data.",
-      icon: "ShieldCheck",
+        "Review, approve, or reject registrations with configurable workflows.",
+      icon: "CheckCircle",
     },
     {
-      title: "Performance Tracking",
+      title: "Payment & Fee Tracking",
       description:
-        "Monitor goals, KPIs, and performance metrics to support employee growth and accountability.",
-      icon: "TrendingUp",
+        "Track registration fees, payment status, and confirmations seamlessly.",
+      icon: "CreditCard",
     },
     {
-      title: "Internal Communication",
+      title: "Status Tracking & Notifications",
       description:
-        "Share announcements, updates, and feedback through integrated communication tools.",
-      icon: "MessageSquare",
+        "Keep registrants informed with automated status updates and notifications.",
+      icon: "Bell",
     },
     {
-      title: "Reports & Workforce Insights",
+      title: "Reports & Audit Logs",
       description:
-        "Analyze attendance trends, productivity, and workforce costs with real-time reports.",
-      icon: "BarChart",
+        "Generate reports and maintain audit trails for complete transparency.",
+      icon: "FileBarChart",
     },
   ];
 
@@ -72,18 +72,17 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        feature={features}
+        featureList={features}
       />
 
-
-      {/* Employee Lifecycle Section */}
+      {/* Process Section */}
       <section className="container py-20 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold">
-            Manage the Complete Employee Lifecycle
+            How Registration Management Works
           </h2>
           <p className="text-muted-foreground">
-            Support your team from onboarding to long-term performance and growth.
+            A smooth and structured process to handle registrations efficiently.
           </p>
         </div>
 
@@ -91,27 +90,27 @@ export default async function Page() {
           {[
             {
               step: "01",
-              title: "Onboarding & Setup",
+              title: "Form Creation",
               description:
-                "Digitize onboarding, assign roles, and set access from day one.",
+                "Design and publish customized registration forms.",
             },
             {
               step: "02",
-              title: "Scheduling & Attendance",
+              title: "Submission & Validation",
               description:
-                "Manage shifts, attendance, leaves, and work hours efficiently.",
+                "Capture entries and validate data automatically.",
             },
             {
               step: "03",
-              title: "Performance & Development",
+              title: "Approval & Payment",
               description:
-                "Track goals, reviews, and skill development over time.",
+                "Review submissions, collect payments, and confirm registrations.",
             },
             {
               step: "04",
-              title: "Retention & Engagement",
+              title: "Confirmation & Reporting",
               description:
-                "Improve engagement through communication, feedback, and transparency.",
+                "Send confirmations and generate actionable reports.",
             },
           ].map((item) => (
             <div
@@ -134,11 +133,10 @@ export default async function Page() {
       <section className="bg-muted py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl font-bold">
-            Build a More Productive Workforce
+            Streamline Every Registration Experience
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Streamline employee management, improve accountability,
-            and empower your teams with Bizby’s Employee Module.
+            Reduce manual effort, improve accuracy, and deliver a seamless registration experience with Bizby’s Registration Management Module.
           </p>
 
           <div className="flex justify-center gap-4">

@@ -106,6 +106,12 @@ export const solutionList: SolutionProps[] = [
 		href: "/solutions/customer",
 	},
 	{
+		title: "Cashflow",
+		icon: "UserRound",
+		description: "Manage customer profiles, interactions, and relationship history",
+		href: "/solutions/cashflow",
+	},
+	{
 		title: "Event Manager",
 		icon: "CalendarDays",
 		description: "Plan, organize, and track events and activities seamlessly",
@@ -124,18 +130,6 @@ export const solutionList: SolutionProps[] = [
 		href: "/solutions/lead",
 	},
 	{
-		title: "Leave Application",
-		icon: "CalendarOff",
-		description: "Automated leave requests, approvals, and tracking",
-		href: "/solutions/leaveapplication",
-	},
-	{
-		title: "Checklist",
-		icon: "ListChecks",
-		description: "Task checklists to ensure process consistency and compliance",
-		href: "/solutions/checklist",
-	},
-	{
 		title: "Contact",
 		icon: "Phone",
 		description: "Centralized contact directory with communication history",
@@ -148,34 +142,16 @@ export const solutionList: SolutionProps[] = [
 		href: "/solutions/registration",
 	},
 	{
-		title: "Visit Planner",
-		icon: "MapPin",
-		description: "Plan and track field visits and schedules",
-		href: "/solutions/visitplanner",
-	},
-	{
 		title: "Vendor",
 		icon: "Truck",
 		description: "Manage vendors, contracts, and supply relationships",
 		href: "/solutions/vendor",
 	},
 	{
-		title: "Treatment",
-		icon: "Syringe",
-		description: "Track treatments, procedures, and medical outcomes",
-		href: "/solutions/treatment",
-	},
-	{
 		title: "Product",
 		icon: "Package",
 		description: "Product catalog, pricing, and inventory control",
 		href: "/solutions/product",
-	},
-	{
-		title: "Notes",
-		icon: "StickyNote",
-		description: "Quick notes and internal documentation",
-		href: "/solutions/notes",
 	},
 	{
 		title: "Announcement",
@@ -205,7 +181,7 @@ export const solutionList: SolutionProps[] = [
 		title: "Sale & Service",
 		icon: "Handshake",
 		description: "Manage sales operations and service workflows",
-		href: "/solutions/saleservice",
+		href: "/solutions/sales-service",
 	},
 	{
 		title: "Service",
@@ -218,6 +194,48 @@ export const solutionList: SolutionProps[] = [
 		icon: "Repeat",
 		description: "Subscription plans, billing cycles, and renewals",
 		href: "/solutions/subscription",
+	},
+	{
+		title: "Transport",
+		icon: "Bus",
+		description: "Manage transport routes, vehicles, and logistics",
+		href: "/solutions/transport",
+	},
+	{
+		title: "Visit Activity",
+		icon: "Activity",
+		description: "Track on-site visit activities and outcomes",
+		href: "/solutions/visitactivity",
+	},
+	{
+		title: "Leave Application",
+		icon: "CalendarOff",
+		description: "Automated leave requests, approvals, and tracking",
+		href: "/solutions/leaveapplication",
+	},
+	{
+		title: "Checklist",
+		icon: "ListChecks",
+		description: "Task checklists to ensure process consistency and compliance",
+		href: "/solutions/checklist",
+	},
+	{
+		title: "Visit Planner",
+		icon: "MapPin",
+		description: "Plan and track field visits and schedules",
+		href: "/solutions/visitplanner",
+	},
+	{
+		title: "Treatment",
+		icon: "Syringe",
+		description: "Track treatments, procedures, and medical outcomes",
+		href: "/solutions/treatment",
+	},
+	{
+		title: "Notes",
+		icon: "StickyNote",
+		description: "Quick notes and internal documentation",
+		href: "/solutions/notes",
 	},
 	{
 		title: "Survey",
@@ -236,17 +254,5 @@ export const solutionList: SolutionProps[] = [
 		icon: "Clock",
 		description: "Organize schedules, classes, or work shifts",
 		href: "/solutions/timetable",
-	},
-	{
-		title: "Transport",
-		icon: "Bus",
-		description: "Manage transport routes, vehicles, and logistics",
-		href: "/solutions/transport",
-	},
-	{
-		title: "Visit Activity",
-		icon: "Activity",
-		description: "Track on-site visit activities and outcomes",
-		href: "/solutions/visitactivity",
 	},
 ];

@@ -2,57 +2,57 @@ import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
 
 export default async function Page() {
-  const headerImage = "/employee-hero.jpg";
+  const headerImage = "/transport-management-hero.jpg"; // theme-style hero image
 
-  const pageTitle = "Employee Management, Made Simple";
-  const pageByline = "Empower your workforce and improve operational efficiency";
+  const pageTitle = "Transport Management, Simplified";
+  const pageByline = "Plan, track, and optimize your transport operations efficiently";
   const pageDescription =
-    "Bizby’s Employee Module helps organizations manage employee records, attendance, roles, performance, and communication—all from a single, centralized platform.";
+    "Bizby’s Transport Management Module helps businesses and institutions manage vehicles, routes, schedules, and drivers seamlessly. Optimize logistics, ensure safety, and track operations in real time.";
 
   const getStartedLink = "/signup";
   const demoLink = "/demo";
 
-  /* Employee Module Features */
-  const featuresTitle = "Everything You Need to Manage Your Workforce";
+  /* Transport Management Features */
+  const featuresTitle = "Why Businesses Choose Bizby Transport Management";
   const featuresDescription =
-    "From onboarding to performance tracking, Bizby gives you complete visibility and control over your team.";
+    "Manage vehicles, drivers, and routes efficiently while reducing costs and improving safety.";
 
   const features = [
     {
-      title: "Centralized Employee Profiles",
+      title: "Fleet & Vehicle Management",
       description:
-        "Maintain complete employee records including personal details, roles, documents, and work history.",
-      icon: "User",
+        "Track all vehicles, maintenance schedules, and usage history in one place.",
+      icon: "Truck",
     },
     {
-      title: "Attendance & Shift Management",
+      title: "Driver Assignment & Tracking",
       description:
-        "Track attendance, shifts, leaves, and working hours with flexible scheduling options.",
-      icon: "CalendarCheck",
+        "Assign drivers to routes, monitor performance, and ensure compliance.",
+      icon: "UserCheck",
     },
     {
-      title: "Roles, Permissions & Access",
+      title: "Route Planning & Optimization",
       description:
-        "Define roles and permissions to ensure secure, role-based access to systems and data.",
-      icon: "ShieldCheck",
+        "Plan routes efficiently to reduce travel time and fuel costs.",
+      icon: "Map",
     },
     {
-      title: "Performance Tracking",
+      title: "Real-Time Vehicle Tracking",
       description:
-        "Monitor goals, KPIs, and performance metrics to support employee growth and accountability.",
-      icon: "TrendingUp",
+        "Monitor vehicle location and status in real time with GPS integration.",
+      icon: "Navigation",
     },
     {
-      title: "Internal Communication",
+      title: "Fuel & Expense Management",
       description:
-        "Share announcements, updates, and feedback through integrated communication tools.",
-      icon: "MessageSquare",
+        "Track fuel consumption, expenses, and optimize operational costs.",
+      icon: "CreditCard",
     },
     {
-      title: "Reports & Workforce Insights",
+      title: "Reports & Analytics",
       description:
-        "Analyze attendance trends, productivity, and workforce costs with real-time reports.",
-      icon: "BarChart",
+        "Analyze trips, fleet performance, and operational efficiency.",
+      icon: "BarChart3",
     },
   ];
 
@@ -72,18 +72,17 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        feature={features}
+        featureList={features}
       />
 
-
-      {/* Employee Lifecycle Section */}
+      {/* Process Section */}
       <section className="container py-20 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold">
-            Manage the Complete Employee Lifecycle
+            How Transport Management Works
           </h2>
           <p className="text-muted-foreground">
-            Support your team from onboarding to long-term performance and growth.
+            A structured approach to managing vehicles, routes, and drivers efficiently.
           </p>
         </div>
 
@@ -91,27 +90,27 @@ export default async function Page() {
           {[
             {
               step: "01",
-              title: "Onboarding & Setup",
+              title: "Plan & Schedule",
               description:
-                "Digitize onboarding, assign roles, and set access from day one.",
+                "Create routes, assign vehicles, and schedule trips efficiently.",
             },
             {
               step: "02",
-              title: "Scheduling & Attendance",
+              title: "Assign & Track Drivers",
               description:
-                "Manage shifts, attendance, leaves, and work hours efficiently.",
+                "Allocate drivers and monitor trip progress in real time.",
             },
             {
               step: "03",
-              title: "Performance & Development",
+              title: "Monitor Operations",
               description:
-                "Track goals, reviews, and skill development over time.",
+                "Track vehicle location, performance, and fuel consumption.",
             },
             {
               step: "04",
-              title: "Retention & Engagement",
+              title: "Analyze & Optimize",
               description:
-                "Improve engagement through communication, feedback, and transparency.",
+                "Generate reports to optimize routes, reduce costs, and improve efficiency.",
             },
           ].map((item) => (
             <div
@@ -134,11 +133,10 @@ export default async function Page() {
       <section className="bg-muted py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl font-bold">
-            Build a More Productive Workforce
+            Optimize Your Transport Operations
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Streamline employee management, improve accountability,
-            and empower your teams with Bizby’s Employee Module.
+            Reduce costs, improve safety, and streamline vehicle operations with Bizby’s Transport Management Module.
           </p>
 
           <div className="flex justify-center gap-4">

@@ -2,56 +2,56 @@ import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
 
 export default async function Page() {
-  const headerImage = "/employee-hero.jpg";
+  const headerImage = "/lead-management-hero.jpg"; // same theme-style image
 
-  const pageTitle = "Employee Management, Made Simple";
-  const pageByline = "Empower your workforce and improve operational efficiency";
+  const pageTitle = "Lead Management, From Capture to Conversion";
+  const pageByline = "Track, nurture, and convert leads with complete visibility";
   const pageDescription =
-    "Bizby’s Employee Module helps organizations manage employee records, attendance, roles, performance, and communication—all from a single, centralized platform.";
+    "Bizby’s Lead Management Module helps businesses capture, organize, and nurture leads efficiently. Gain full visibility into your sales pipeline and convert more prospects into customers.";
 
   const getStartedLink = "/signup";
   const demoLink = "/demo";
 
-  /* Employee Module Features */
-  const featuresTitle = "Everything You Need to Manage Your Workforce";
+  /* Lead Management Features */
+  const featuresTitle = "Why Businesses Choose Bizby Lead Management";
   const featuresDescription =
-    "From onboarding to performance tracking, Bizby gives you complete visibility and control over your team.";
+    "A powerful and intuitive solution to manage leads, improve follow-ups, and accelerate sales growth.";
 
   const features = [
     {
-      title: "Centralized Employee Profiles",
+      title: "Multi-Source Lead Capture",
       description:
-        "Maintain complete employee records including personal details, roles, documents, and work history.",
-      icon: "User",
+        "Capture leads from websites, forms, campaigns, calls, and manual entries in one place.",
+      icon: "Inbox",
     },
     {
-      title: "Attendance & Shift Management",
+      title: "Centralized Lead Database",
       description:
-        "Track attendance, shifts, leaves, and working hours with flexible scheduling options.",
-      icon: "CalendarCheck",
+        "Maintain a clean, organized lead repository with complete interaction history.",
+      icon: "Database",
     },
     {
-      title: "Roles, Permissions & Access",
+      title: "Lead Assignment & Routing",
       description:
-        "Define roles and permissions to ensure secure, role-based access to systems and data.",
-      icon: "ShieldCheck",
+        "Automatically assign leads to the right sales reps based on rules and territories.",
+      icon: "Shuffle",
     },
     {
-      title: "Performance Tracking",
+      title: "Lead Scoring & Qualification",
       description:
-        "Monitor goals, KPIs, and performance metrics to support employee growth and accountability.",
-      icon: "TrendingUp",
+        "Prioritize high-intent leads using customizable scoring and qualification criteria.",
+      icon: "Target",
     },
     {
-      title: "Internal Communication",
+      title: "Follow-ups & Reminders",
       description:
-        "Share announcements, updates, and feedback through integrated communication tools.",
-      icon: "MessageSquare",
+        "Never miss a follow-up with automated tasks, reminders, and notifications.",
+      icon: "Bell",
     },
     {
-      title: "Reports & Workforce Insights",
+      title: "Pipeline & Conversion Insights",
       description:
-        "Analyze attendance trends, productivity, and workforce costs with real-time reports.",
+        "Track conversion rates, pipeline stages, and sales performance with real-time analytics.",
       icon: "BarChart",
     },
   ];
@@ -72,18 +72,17 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        feature={features}
+        featureList={features}
       />
 
-
-      {/* Employee Lifecycle Section */}
+      {/* Process Section */}
       <section className="container py-20 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold">
-            Manage the Complete Employee Lifecycle
+            How Lead Management Works
           </h2>
           <p className="text-muted-foreground">
-            Support your team from onboarding to long-term performance and growth.
+            A structured approach to capture, nurture, and convert leads efficiently.
           </p>
         </div>
 
@@ -91,27 +90,27 @@ export default async function Page() {
           {[
             {
               step: "01",
-              title: "Onboarding & Setup",
+              title: "Lead Capture",
               description:
-                "Digitize onboarding, assign roles, and set access from day one.",
+                "Collect leads from multiple channels into a centralized system.",
             },
             {
               step: "02",
-              title: "Scheduling & Attendance",
+              title: "Qualification & Scoring",
               description:
-                "Manage shifts, attendance, leaves, and work hours efficiently.",
+                "Evaluate and prioritize leads based on intent and readiness.",
             },
             {
               step: "03",
-              title: "Performance & Development",
+              title: "Engagement & Follow-ups",
               description:
-                "Track goals, reviews, and skill development over time.",
+                "Nurture leads through timely communication and follow-ups.",
             },
             {
               step: "04",
-              title: "Retention & Engagement",
+              title: "Conversion & Analysis",
               description:
-                "Improve engagement through communication, feedback, and transparency.",
+                "Convert qualified leads and analyze pipeline performance.",
             },
           ].map((item) => (
             <div
@@ -134,11 +133,10 @@ export default async function Page() {
       <section className="bg-muted py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl font-bold">
-            Build a More Productive Workforce
+            Turn More Leads into Customers
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Streamline employee management, improve accountability,
-            and empower your teams with Bizby’s Employee Module.
+            Improve lead visibility, accelerate follow-ups, and increase conversions with Bizby’s Lead Management Module.
           </p>
 
           <div className="flex justify-center gap-4">

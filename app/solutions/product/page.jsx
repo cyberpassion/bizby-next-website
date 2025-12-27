@@ -2,57 +2,57 @@ import { SplitHeroSection } from "@/components/layout/sections/cyp/split-hero";
 import { FeaturesSection } from "@/components/layout/sections/cyp/features";
 
 export default async function Page() {
-  const headerImage = "/employee-hero.jpg";
+  const headerImage = "/product-management-hero.jpg"; // same theme-style image
 
-  const pageTitle = "Employee Management, Made Simple";
-  const pageByline = "Empower your workforce and improve operational efficiency";
+  const pageTitle = "Product Management, Structured & Scalable";
+  const pageByline = "Manage products, pricing, and lifecycle from one platform";
   const pageDescription =
-    "Bizby’s Employee Module helps organizations manage employee records, attendance, roles, performance, and communication—all from a single, centralized platform.";
+    "Bizby’s Product Management Module helps you create, organize, and manage your product catalog efficiently. Control pricing, variants, and product lifecycle with complete visibility.";
 
   const getStartedLink = "/signup";
   const demoLink = "/demo";
 
-  /* Employee Module Features */
-  const featuresTitle = "Everything You Need to Manage Your Workforce";
+  /* Product Management Features */
+  const featuresTitle = "Why Businesses Choose Bizby Product Management";
   const featuresDescription =
-    "From onboarding to performance tracking, Bizby gives you complete visibility and control over your team.";
+    "A powerful solution to manage products across sales, inventory, and operations.";
 
   const features = [
     {
-      title: "Centralized Employee Profiles",
+      title: "Centralized Product Catalog",
       description:
-        "Maintain complete employee records including personal details, roles, documents, and work history.",
-      icon: "User",
+        "Maintain a single source of truth for all products and services.",
+      icon: "Package",
     },
     {
-      title: "Attendance & Shift Management",
+      title: "Product Variants & Attributes",
       description:
-        "Track attendance, shifts, leaves, and working hours with flexible scheduling options.",
-      icon: "CalendarCheck",
+        "Manage SKUs, variants, categories, and custom attributes easily.",
+      icon: "Layers",
     },
     {
-      title: "Roles, Permissions & Access",
+      title: "Pricing & Tax Configuration",
       description:
-        "Define roles and permissions to ensure secure, role-based access to systems and data.",
-      icon: "ShieldCheck",
+        "Configure pricing, discounts, and tax rules with full control.",
+      icon: "Tag",
     },
     {
-      title: "Performance Tracking",
+      title: "Inventory Integration",
       description:
-        "Monitor goals, KPIs, and performance metrics to support employee growth and accountability.",
-      icon: "TrendingUp",
+        "Sync products with inventory and stock availability in real time.",
+      icon: "Boxes",
     },
     {
-      title: "Internal Communication",
+      title: "Product Lifecycle Management",
       description:
-        "Share announcements, updates, and feedback through integrated communication tools.",
-      icon: "MessageSquare",
+        "Track product status from launch to discontinuation.",
+      icon: "RefreshCcw",
     },
     {
-      title: "Reports & Workforce Insights",
+      title: "Reports & Product Insights",
       description:
-        "Analyze attendance trends, productivity, and workforce costs with real-time reports.",
-      icon: "BarChart",
+        "Analyze product performance, demand, and profitability.",
+      icon: "FileBarChart",
     },
   ];
 
@@ -72,18 +72,17 @@ export default async function Page() {
       <FeaturesSection
         title={featuresTitle}
         description={featuresDescription}
-        feature={features}
+        featureList={features}
       />
 
-
-      {/* Employee Lifecycle Section */}
+      {/* Process Section */}
       <section className="container py-20 space-y-12">
         <div className="text-center max-w-3xl mx-auto space-y-4">
           <h2 className="text-3xl font-bold">
-            Manage the Complete Employee Lifecycle
+            How Product Management Works
           </h2>
           <p className="text-muted-foreground">
-            Support your team from onboarding to long-term performance and growth.
+            A clear and controlled approach to managing your product ecosystem.
           </p>
         </div>
 
@@ -91,27 +90,27 @@ export default async function Page() {
           {[
             {
               step: "01",
-              title: "Onboarding & Setup",
+              title: "Product Creation",
               description:
-                "Digitize onboarding, assign roles, and set access from day one.",
+                "Add products, variants, pricing, and attributes.",
             },
             {
               step: "02",
-              title: "Scheduling & Attendance",
+              title: "Catalog Organization",
               description:
-                "Manage shifts, attendance, leaves, and work hours efficiently.",
+                "Categorize and structure products for easy access.",
             },
             {
               step: "03",
-              title: "Performance & Development",
+              title: "Sales & Inventory Sync",
               description:
-                "Track goals, reviews, and skill development over time.",
+                "Keep stock, pricing, and availability aligned.",
             },
             {
               step: "04",
-              title: "Retention & Engagement",
+              title: "Performance Optimization",
               description:
-                "Improve engagement through communication, feedback, and transparency.",
+                "Track insights to optimize pricing and product strategy.",
             },
           ].map((item) => (
             <div
@@ -134,11 +133,10 @@ export default async function Page() {
       <section className="bg-muted py-20">
         <div className="container text-center space-y-6">
           <h2 className="text-3xl font-bold">
-            Build a More Productive Workforce
+            Take Control of Your Product Portfolio
           </h2>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Streamline employee management, improve accountability,
-            and empower your teams with Bizby’s Employee Module.
+            Manage products efficiently, maintain consistency, and drive smarter business decisions with Bizby’s Product Management Module.
           </p>
 
           <div className="flex justify-center gap-4">
