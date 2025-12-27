@@ -56,7 +56,7 @@ export const productList: ProductProps[] = [
 		title: "Sales & Service",
 		icon: "ShoppingCart",
 		description: "Automate Sales & Service",
-		href: "/industry/sales&service",
+		href: "/industry/sales-service",
 	},
 	{
 		title: "CRM Solutions",
