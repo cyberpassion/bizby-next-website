@@ -48,7 +48,7 @@ export const ContactSection = () => {
     <SectionContainer id="contact">
       <SectionHeader
         subTitle="Contact"
-        title="Get Connect With Us access"
+        title="Get Connect With Us"
         description=" Stay in touch with us for updates, support, and valuable insights.
           We’re here to help you every step of the way!"
       />
@@ -60,7 +60,7 @@ export const ContactSection = () => {
                 <Building2 className="size-4" />
                 <div className="font-bold">Location:</div>
               </div>
-              <div className="text-muted-foreground">123 Maple Lane, Springfield, IL 62704</div>
+              <div className="text-muted-foreground">EC-66, Chandanvan, Mathura, Uttar Pradesh, 282007</div>
             </div>
 
             <div className="bg-muted">
@@ -68,7 +68,7 @@ export const ContactSection = () => {
                 <Phone className="size-4" />
                 <div className="font-bold">Call us:</div>
               </div>
-              <div className="text-muted-foreground">+1 (555) 987-6543</div>
+              <div className="text-muted-foreground">+91 8979744113</div>
             </div>
 
             <div className="bg-muted">
@@ -76,7 +76,7 @@ export const ContactSection = () => {
                 <Mail className="size-4" />
                 <div className="font-bold">Email us:</div>
               </div>
-              <div className="text-muted-foreground">contact@ourcompany.com</div>
+              <div className="text-muted-foreground">support@cyberpassion.com</div>
             </div>
 
             <div className="bg-muted">
@@ -84,7 +84,7 @@ export const ContactSection = () => {
                 <Clock className="size-4" />
                 <div className="font-bold">Business Hours:</div>
               </div>
-              <div className="text-muted-foreground">Tuesday to Saturday, 9 AM - 5 PM</div>
+              <div className="text-muted-foreground">Monday to Saturday, 9 AM - 5 PM</div>
             </div>
           </div>
         </div>
